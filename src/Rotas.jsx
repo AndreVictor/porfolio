@@ -16,12 +16,17 @@ export default function Rotas() {
     return (
         <main>
             <Header
-            menu={menu}
-            change={handleMenu}
+                menu={menu}
+                change={handleMenu}
             />
 
             <Routes>
                 <Route path="/" element={<Body />} />
+                <Route path="galeria" element={
+                    <Body 
+                        state={menu}
+                    />
+                } />
             </Routes>
 
             <Footer />
