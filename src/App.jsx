@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Home from './components/home/Home';
 import Info from './components/info/Info';
-import Body from './components/main/Body';
 
 import './styles/Main.scss';
 

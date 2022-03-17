@@ -4,7 +4,7 @@ import CardImg from './CardImg';
 
 import imgDatatest from '../../imgDatatest';
 
-export default function Body(props) {
+export default function Lista() {
     const [activeIndex, setActiveIndex] = useState(-1);
 
     return (
