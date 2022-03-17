@@ -1,0 +1,109 @@
+.info {
+    &__box {
+        position: fixed;
+        top: 0;
+        left: -25vw;
+        background-color: black;
+        color: white;
+        width: 25vw;
+        z-index: 1;
+        padding: 2rem;
+        height: 100vh;
+
+        transition: all 0.2s ease-in-out;
+
+        &--act {
+            left: 0;
+        }
+
+        h1 {
+            padding: .8rem 0;
+            font-weight: 300;
+            font-size: 2.8rem;
+            margin-bottom: 4.8rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__button {
+        position: fixed;
+        top: 2rem;
+        left: 2rem;
+
+        transition: all 0.2s ease-in-out;
+
+        &--act {
+            left: calc(2rem + 25vw);
+        }
+    }
+
+    &__button-label {
+        cursor: pointer;
+        font-weight: 700;
+        font-family:'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 1.6rem;
+        color: red;
+
+        position: absolute;
+        top: 45%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: black;
+        }
+
+        &--act {
+            left: 85%;
+            top: 40%;  
+        }
+    }
+
+    &__button-input {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+
+        background-color: black;
+        border-radius: 50%;
+        width: 2.4rem;
+        height: 2.4rem;
+        border: none;
+        cursor: pointer;
+
+        transition: all .2s ease-in-out;
+
+
+        &:checked {
+            background-color: red;
+            border: 1px solid black;
+            color: black;
+        }
+
+        &:checked + label {
+            color: black;
+        }
+
+        &:hover {
+            background-color: red;
+            border: 1px solid black;
+        }
+    }
+}

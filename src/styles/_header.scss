@@ -1,0 +1,52 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 8rem;
+
+    position:sticky;
+    top:0;
+    z-index: 3;
+    background-color: white;
+
+    &__play {
+        background-color: black;
+        clip-path: polygon(50% 50%, 0 0, 0 100%);
+        width: 2rem;
+        height: 1.1rem;
+        border: none;
+        cursor: pointer;
+
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background-color: red;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        gap: 2.4rem;
+        align-items: flex-start;
+    }
+
+    &__divider {
+        font-size: 1.4rem;
+    }
+
+    &__item {
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+
+        transition: all 0.1s ease-in-out;
+    }
+
+    &__item input[type="radio"] {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+}
