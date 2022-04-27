@@ -50,4 +50,10 @@ body {
     line-height: 1.6;
     color: black;
     font-size: 1.6rem;
+
+    overscroll-behavior: none;
+    -ms-overflow-style: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }  

@@ -15,7 +15,7 @@ export default function Footer() {
         return ()=> {
             window.removeEventListener('resize', watchScroll);
         }
-    }, []);
+    }, [fixedFooter]);
 
     return (
         <footer 

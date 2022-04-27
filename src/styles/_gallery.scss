@@ -1,21 +1,78 @@
 .gallery {
 
     &__box {
-        height: 100vh !important;
-
-        div {
-            gap: 4rem;
-        }
+        display: grid;
+        align-items: center;
+        grid-template-rows: repeat(auto-fit, minmax(2rem, 45rem));
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 2rem;
     }
 
     &__card {
-        width: 20rem;
-        height: 100%;
+        cursor: pointer;
+        width: 100%;
+        height: 45rem;
+
+        position: relative;
+
+        transform: scale(1);
+        transition: all 0.2s ease-in-out;
+
+/*         &--top {
+            grid-row: 1/2;
+        }
+
+        &--bottom {
+            grid-row: 2/3;
+        } */
+
     }
 
     &__img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    &__card-info {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 2rem;
+        opacity: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+            background-color: white;
+        }
+    }
+
+    &__card-title,
+    &__card-year,
+    &__card-category {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        margin-bottom: .8rem;
+    }
+
+    &__card-divider {
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        margin-bottom: .8rem;
+
+    }
+
+    &__card-arrow {
+        margin-top: auto;
+        width: 5rem;
     }
 }

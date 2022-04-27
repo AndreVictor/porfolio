@@ -1,10 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import { NavLink } from "react-router-dom";
 
+import imgDatatest from '../../imgDataTest';
+
 export default function Header() {
     const navLinkStyles = ({isActive}) => {
         return isActive ? {color: 'red', fontWeight: '700'} : {}
     }
+
+    const detalheUrl = imgDatatest.data.memes[0].name.replaceAll(' ', '-');
 
     return (
         <header className="header">
@@ -38,7 +42,7 @@ export default function Header() {
                     
                     <li className="header__item">
                         <NavLink 
-                            to={`/detalhe`}
+                            to={`/${detalheUrl}`}
                             style={navLinkStyles}
                         >
                         Detalhe

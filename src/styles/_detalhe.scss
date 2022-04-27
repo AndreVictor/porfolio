@@ -1,0 +1,75 @@
+.detalhe {
+
+    &__box {
+        margin: 0 2rem;
+    }
+
+    &__header {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 2fr;
+        align-items: center;
+        font-size: 2.4rem;
+        padding: 1rem 0;
+        border-top: 1px solid black;
+        height: 8rem;
+
+        position: sticky;
+        top: 8rem;
+        
+    }
+
+    &__title {
+        font-weight: 600;
+    }
+
+    &__year,
+    &__category {
+        font-weight: 300;
+    }
+
+    &__tags {
+        justify-self: flex-end;
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__tags p,
+    &__tags span {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    &__main {
+        padding: 1.2rem 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 65vh;
+        margin-right: 12.8rem;
+        font-size: 1.8rem;
+
+        position: sticky;
+        top: 17rem;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    &__link {
+        color: black;
+    }
+}
